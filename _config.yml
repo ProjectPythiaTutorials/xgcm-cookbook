@@ -8,6 +8,7 @@ email: projectpythia@ucar.edu
 copyright: '2022'
 
 <<<<<<< HEAD:_config.yml
+<<<<<<< HEAD:_config.yml
 description: The cookbook for xgcm examples and use cases that were originally housed by Pangeo Gallery.
 thumbnail: thumbnail.png
 tags:
@@ -16,9 +17,8 @@ tags:
   packages:
     - xgcm
 
-# Execute the notebooks upon building the book?
-# See https://jupyterbook.org/en/stable/content/execute.html
 execute:
+  # To execute notebooks via a binder instead, replace 'cache' with 'binder'
   execute_notebooks: cache
   timeout: 600
   allow_errors: True

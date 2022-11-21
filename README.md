@@ -5,7 +5,7 @@
 [![nightly-build](https://github.com/ProjectPythiaCookbooks/xgcm-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythiaCookbooks/xgcm-cookbook/actions/workflows/nightly-build.yaml)
 [![Binder](http://binder.mypythia.org/badge_logo.svg)](http://binder.mypythia.org/v2/gh/ProjectPythiaCookbooks/xgcm-cookbook/main?labpath=notebooks)
 
-This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., *working with radar data in Python*)
+This Project Pythia Cookbook covers examples and tutorials using XGCM with models and observational datasets.
 
 ## Motivation
 

@@ -1,8 +1,17 @@
-name: cookbook-dev
+name: xgcm-cookbook-dev
 channels:
   - conda-forge
 dependencies:
+  - cartopy
+  - dask-gateway
+  - gcsfs
+  - intake
+  - intake-xarray
   - jupyter-book
+  - matplotlib
   - pip
+  - pyresample
+  - xarray
+  - xgcm
   - pip:
       - sphinx-pythia-theme

@@ -1,23 +1,25 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: XGCM Cookbook
+title: Project Pythia Cookbook Template
 author: the <a href="https://projectpythia.org/">Project Pythia</a> Community
 logo: notebooks/images/logos/pythia_logo-white-rtext.svg
 email: projectpythia@ucar.edu
-copyright: '2022'
+copyright: "2022"
 
-description: The cookbook for xgcm examples and use cases that were originally housed by Pangeo Gallery.
+description: A sample cookbook description.
 thumbnail: thumbnail.png
 tags:
   domains:
-    - 
+    - sampledomain
   packages:
-    - xgcm
+    - samplepackage
 
-# Don't execute the notebooks upon building the book
 execute:
-  execute_notebooks: "off"
+  # To execute notebooks via a binder instead, replace 'cache' with 'binder'
+  execute_notebooks: cache
+  timeout: 600
+  allow_errors: False # cells with expected failures must set the `raises-exception` cell tag
 
 # Add a few extensions to help with parsing content
 parse:
@@ -34,17 +36,20 @@ parse:
 
 sphinx:
   config:
+    linkcheck_ignore: ["https://doi.org/*",]
+    nb_execution_raise_on_error: true  # raise exception in build if there are notebook errors
     html_favicon: notebooks/images/icons/favicon.ico
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
     html_permalinks_icon: '<i class="fas fa-link"></i>'
     html_theme_options:
       home_page_in_toc: true
-      repository_url: https://github.com/ProjectPythia/pythia-foundations # Online location of your book
+      repository_url: https://github.com/ProjectPythia/cookbook-template/ # Online location of your book
       repository_branch: main # Which branch of the repository should be used when creating links (optional)
       use_issues_button: true
       use_repository_button: true
       use_edit_page_button: true
+      google_analytics_id: G-T52X8HNYE8
       github_url: https://github.com/ProjectPythia
       twitter_url: https://twitter.com/project_pythia
       icon_links:
@@ -53,7 +58,7 @@ sphinx:
           icon: fab fa-youtube-square
           type: fontawesome
       launch_buttons:
-        binderhub_url: http://binder.mypythia.org
+        binderhub_url: https://binder.projectpythia.org
         notebook_interface: jupyterlab
       extra_navbar: |
         Theme by <a href="https://projectpythia.org">Project Pythia</a>.<br><br>
@@ -65,7 +70,7 @@ sphinx:
         - name: Foundations
           url: https://foundations.projectpythia.org
         - name: Cookbooks
-          url: projectpythiatutorials.github.io
+          url: https://cookbooks.projectpythia.org
         - name: Resources
           url: https://projectpythia.org/resource-gallery.html
         - name: Community
